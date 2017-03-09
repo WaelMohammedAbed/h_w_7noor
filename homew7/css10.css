@@ -1,0 +1,16 @@
+
+.imgg{
+    
+    float: right
+  
+}
+
+.post-content {
+    margin-left: 1px
+}
+
+.post-container {
+    margin: 45px 20px 0 0;  
+    border: 5px solid red;
+    overflow: auto 
+}

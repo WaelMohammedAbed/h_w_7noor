@@ -1,0 +1,2 @@
+wget www.googl.com
+grep -o function index.html | wc -l 

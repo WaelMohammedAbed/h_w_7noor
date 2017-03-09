@@ -1,0 +1,43 @@
+var a = [17, 24, 4, 26, 19, 30, 2, 66, 40];
+var evens = [];
+var odds = [];
+var min =0;
+
+ {
+
+ min=a[1];
+    for (var i = 0; i < a.length; i++) {
+
+        if (isOdd(a[i]))
+        {
+            
+              if(a[i]<min) min=a[i];
+              console.log(a[i]);  
+      
+       }
+    }
+       console.log(" min of odds " , min);
+   
+     min=a[1];   
+       for (var i = 0; i < a.length; i++) {
+
+        if (!(isOdd(a[i])))
+        {
+            
+              if(a[i]<min) min=a[i];
+              console.log(a[i]);  
+      
+       } 
+       
+    }
+    console.log(" min of evens ",min);
+    
+    
+  function isOdd(x)      {
+    if (x %2 !== 0)
+        return true; 
+    else
+        return false;
+
+}
+ }

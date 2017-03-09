@@ -1,0 +1,12 @@
+.vertical{
+max-width: 70px;
+max-height: 200px;
+overflow-y: hidden;
+
+}
+.horizontal{
+max-width: 200px;
+max-height: 200px;
+overflow-x: hidden;
+
+}

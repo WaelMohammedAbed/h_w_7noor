@@ -1,0 +1,85 @@
+var a = [17, 24, 4, 26, 19, 30, 2, 66, 40];
+var evens = [];
+var odds = [];
+var min =0;
+var num=0;
+
+
+
+
+
+ {
+   
+   
+num=0; 
+ min=a[1];
+    for (var i = 0; i < a.length; i++) {
+
+        if (isOdd(a[i]))
+        {
+            
+              if(a[i]<min) min=a[i];
+             
+              odds[num]=a[i];
+              num=num+1;
+       }
+    }
+    sort(odds);
+    revers(odds);
+    for ( var i=num-1;i>-1;i--){
+      console.log(odds[i]);
+    }
+       console.log(" min of odds " , min);
+   
+     min=a[1];
+     num=0;
+       for (var i = 0; i < a.length; i++) {
+
+        if (!(isOdd(a[i])))
+        {
+            
+              if(a[i]<min) min=a[i];
+              evens[num]=a[i];
+              num=num+1;
+      
+       } 
+       
+    }
+    sort(evens);
+    revers(evens);
+    for ( var i=num-1;i>-1;i--){
+      console.log(evens[i]);
+    }
+    console.log(" min of evens ",min);
+    
+    
+  function isOdd(x)      {
+    if (x %2 !== 0)
+        return true; 
+    else
+        return false;
+
+}
+function sort(gen){
+  for (var i=0;i<num-1;i++){
+    for( var j=i+1;j<num;j++) {
+      if ( gen[i]>gen[j]){
+        x=gen[i];
+        gen[i]=gen[j];
+        gen[j]=x;
+      }
+      }
+      
+    }
+    
+  }
+function revers(gen){
+  for (var i=0;i<num;i++){
+    x=gen[i];
+    gen[i]=gen[num-1-i];
+    gen[num-1-i]=x;
+  }
+}
+
+}
+ 

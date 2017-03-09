@@ -1,0 +1,47 @@
+in pseudocode
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+var array = [17, 24, 4, 26, 19, 30, 2, 66, 40];
+var odds = [];
+var min =0;
+for (var i = 0; i < nums.length)
+{
+ if ( array number is not divisible by 2 then) 
+ PRINT array number (i)
+  increment the odds  by 1
+  }
+  for (var i = 0; i < nums.length){
+  if (array number odds < min ){
+  then the array is = min number
+  print min number 
+  
+  in JavaScript
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+var a = [17, 24, 4, 26, 19, 30, 2, 66, 40];
+var odds = [];
+var min =0;
+
+ {
+    for (var i = 0; i < a.length; i++) {
+
+        if ((a[i] % 2)!==0) {
+            odds.push(a[i]);
+                console.log(odds);
+                
+                
+        }
+   
+       for (var i = 0; i < a.length; i++){
+         if (a[i]<min){
+           a[i]= min;
+           console.log(min);
+         }
+      
+           
+         }
+        
+       }
+ 
+    
+
+ 
+}

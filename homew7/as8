@@ -1,0 +1,1 @@
+alias myCommand="history | grep '\w\{1,6\}'"

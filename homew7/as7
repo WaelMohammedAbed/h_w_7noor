@@ -1,0 +1,43 @@
+var A = window.prompt("Set value of A", "numbers (can be positive or negative");
+var B = window.prompt("Set value of B", "numbers (can be positive or negative");
+var C = window.prompt("Set value of C", "numbers (can be positive or negative");
+var D = window.prompt("Set value of D", "numbers (can be positive or negative");
+var E = window.prompt("Set value of E", "numbers (can be positive or negative");
+
+console.log("A=",A);
+console.log("B=",B);
+console.log("C=",C);
+console.log("D=",D);
+console.log("E=",E);
+var printNumber=0;
+
+if(A%2==0)
+{
+  console.log("BLUE");
+  printNumber++;
+}
+if(B%2==0 && C>5)
+{
+  console.log("GREEN");
+  printNumber++;
+}
+if(B%2==0 && C<5 && E%2==1)
+{
+  console.log("YELLOW");
+  printNumber++;
+}
+if(A%2==0 && B%2==0 && C<0)
+{
+  console.log("ORANGE");
+  printNumber++;
+}
+if((C+D+E)>(A+C))
+{
+  console.log("PURPLE");
+  printNumber++;
+}
+if(printNumber>1&&(C%2==1||C<B))
+{
+  console.log("RED");
+  printNumber++;
+}
